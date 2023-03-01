@@ -1,108 +1,91 @@
-body
-{
+/* Default styles */
+body {
     margin: 0;
     text-align: center;
     font-size: 23px;
     font-family: 'Roboto', sans-serif;
 }
 
-h1
-{
+h1 {
     font-size: 70px;
 }
 
-h2
-{
+h2 {
     font-size: 50px;
 }
 
-h1,h2,h3
-{
+h1, h2, h3 {
     margin-top: 0;
     font-weight: 100;
 }
 
-h2
-{
+h2 {
     border-top: 1px solid #252525;
     border-bottom: 1px solid #252525;
     padding: 25px 0px;
 }
 
-h3
-{
+h3 {
     font-weight: 900;
     margin: 0;
 }
 
-p
-{
+p {
     margin: 50px 0px;
 }
 
-header,section
-{
+header, section {
     width: 100%;
     padding: 90px 0px;
 }
 
-.container
-{
+.container {
     width: 600px;
     margin: 0px auto;
 }
 
-.main-image
-{
+.main-image {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     border: 10px solid whitesmoke;
 }
 
-.inverse h2
-{
+.inverse h2 {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
 
-.text-style
-{
+.text-style {
     font-size: larger;
     font-weight: 900;
     display: block;
 }
 
-.inverse
-{
+.inverse {
     background-color: #252525;
     color: #fff;
 }
 
-.inverse h2
-{
+.inverse h2 {
     margin-bottom: 70px;
 }
 
-.text-style
-{
+.text-style {
     color: #99D930;
 }
 
-.small-text
-{
+.small-text {
     margin: 0;
     font-size: 17px;
 }
 
-#name,a,time
-{
+#name, a, time {
     color:#99D930;
     font-weight: 900;
 }
 
-.btn
-{
+.btn {
     display: inline-block;
     background-color:#99D930;
     color: #252525;
@@ -111,15 +94,50 @@ header,section
     text-decoration: none;
 }
 
-.btn:hover,.btn:focus
-{
+.btn:hover, .btn:focus {
     background-color: #252525;
     color: #fff;
 }
 
-.inverse .btn:hover,.inverse .btn:focus
-{
+.inverse .btn:hover, .inverse .btn:focus {
     background-color: #fff;
     color: #252525;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust container width for smaller screens */
+    .container {
+        width: 90%;
+    }
+    
+    /* Reduce font sizes for smaller screens */
+    body {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    /* Adjust padding for smaller screens */
+    header, section {
+        padding: 50px 0;
+    }
+    
+    /* Make the main image smaller for smaller screens */
+    .main-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Adjust margin and font size for smaller screens */
+    .btn {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
